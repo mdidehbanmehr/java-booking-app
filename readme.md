@@ -1,32 +1,8 @@
-[//]: # (```sh)
+To get the database up and running, run the commands below
+```sh
+docker compose build
+docker compose up
+```
+The test data is added inside the migration file. Potential improvement is to create a seeder class or gradle task.
 
-[//]: # ()
-[//]: # (docker run --name demo-db -e POSTGRES_PASSWORD='postgres' -d -p 5434:5432 postgres)
-
-[//]: # ()
-[//]: # (```)
-
-[//]: # ()
-[//]: # ()
-[//]: # ()
-[//]: # (```sh)
-
-[//]: # ()
-[//]: # (docker exec -it demo-db bash)
-
-[//]: # ()
-[//]: # (```)
-
-[//]: # ()
-[//]: # ()
-[//]: # (```)
-
-[//]: # ()
-[//]: # (psql -U postgres)
-
-[//]: # (ALTER USER postgres WITH PASSWORD '<password of your choosing>';)
-
-[//]: # (CREATE DATABASE demo;)
-
-[//]: # ()
-[//]: # (```)
+running the application, it will run on port `9090`
